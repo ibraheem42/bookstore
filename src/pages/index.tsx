@@ -1,5 +1,6 @@
 import Head from 'next/head';
 
+import { APP_NAME } from '@/constants';
 import { Booklist } from '@/components/booklist';
 import { AddBook } from '@/components/add-book';
 
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Bookstore</title>
+        <title>{APP_NAME}</title>
         <meta
           name="description"
           content="A bookstore app"
@@ -23,8 +24,8 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
-      <main className={styles.main}>
-        <h1>Welcome to the Bookstore</h1>
+      <main className={styles['main']}>
+        <h1>{`Welcome to the ${APP_NAME}`}</h1>
         <div className={styles['add-book-button']}>
           <AddBook />
         </div>

@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { addBook } from '@/redux/appSlice';
 import { IBook } from '@/types';
-import BookForm from '../book-form/book-form';
+import { BookForm } from '../book-form';
 
 export default function AddBook() {
   const dispatch = useDispatch();
